@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> document</title>
+     </head>
+  <body>
+    <script>
+      let body = document.querySelector("body");
+      body.style.margin = "0";
+
+      let container = document.createElement("div");
+      container.style.width = "100%";
+      container.style.height = "100vh";
+      container.style.position = "realtive";
+      body.appendChild(container);
+      
+      //black
+      let black = document.createElement("div");
+      black.style.position = "absolute";
+      black.style.top = "0";
+      black.style.width = "100%"
+      black.style.backgroundColor = "black";
+      black.style.height = "33.33333%";
+      container.appendChild(black);
+        
+      //green
+      let green = document.createElement("div");
+      green.style.position = "absolute";
+      green.style.bottom = "0";
+      green.style.width = "100%"
+      green.style.backgroundColor = "green";
+      green.style.height = "33.33333%";
+      container.appendChild(green);
+
+      //red
+      let red = document.createElement("div");
+      red.style.position = "absolute";
+      red.style.borderStyle = "solid";
+      red.style.borderColor = "transparent transparent transparent red";
+      red.style.borderWidth = "50vh";
+      container.appendChild(red);
+
+    </script>
+  </body>
+</html>
